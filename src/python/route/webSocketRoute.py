@@ -1,4 +1,5 @@
 from flask import Blueprint
+from datetime import datetime
 from src.python.config.appConfig import wsApp
 
 
@@ -7,8 +8,9 @@ routes: Blueprint = Blueprint("ws", __name__)
 
 @wsApp.on("message")
 def handle_message(message: str) -> str:
-    wsApp.emit("response", message)
-    return message
+    wsResponse = f"websocket response: {message} at {datetime.now().strftime('%m/%d/%Y, %H:%M:%S')}"
+    wsApp.emit("response", wsResponse)
+    return wsResponse
 
 
 @wsApp.on('connect')
