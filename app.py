@@ -5,4 +5,4 @@ from src.python.config.appConfig import app, wsApp
 
 
 if __name__ == '__main__':
-    wsApp.run(app, debug=True, host="0.0.0.0", port=5001)
+    wsApp.run(app, debug=True)
