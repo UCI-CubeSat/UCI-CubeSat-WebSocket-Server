@@ -2,5 +2,5 @@ Flask
 Flask-Cors
 Flask-SocketIO
 gunicorn
-gevent
+eventlet
 python-dotenv
