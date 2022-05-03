@@ -1,7 +1,7 @@
 Flask
 Flask-Cors
 Flask-SocketIO
-gunicorn
+gunicorn==20.1.0
 python-dotenv
 gevent-websocket
-eventlet
+eventlet==0.30.2
