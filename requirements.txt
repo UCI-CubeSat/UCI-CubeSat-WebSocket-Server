@@ -3,5 +3,5 @@ Flask-Cors
 Flask-SocketIO
 gunicorn
 gevent-websocket
-eventlet
+eventlet==0.33.0
 python-dotenv
