@@ -3,3 +3,5 @@ Flask-Cors
 Flask-SocketIO
 gunicorn
 python-dotenv
+gevent-websocket
+eventlet
