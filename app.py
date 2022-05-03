@@ -5,4 +5,4 @@ _ = [app.register_blueprint(route) for route in [routes]]
 
 
 if __name__ == '__main__':
-    wsApp.run(app, debug=True, port="5001")
+    wsApp.run(app, debug=True)
